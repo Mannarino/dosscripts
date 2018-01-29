@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Mannarino - Frontend</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+  <nav class="light-blue lighten-1" role="navigation">
+    <div class="nav-wrapper container">
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#"> Mannarino Frontend</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="#">Navbar Link</a></li>
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+      <br><br>
+      
+      <div class="row center">
+        <h5 class="header col s12 light">Este sitio contiene dos scripts en javascript, los cuales puedes examinar mas abajo, probarlos y ver como funcionan</h5>
+      </div>
+      <br>
+      <!-- primer script -->
+      <div class="row center contenedor-script">
+        <!-- cabecera del script 1  -->
+        <nav>
+        <div class="nav-wrapper">
+          <div class="col s12">
+            <a href="#!" class="breadcrumb">javascript - script 1</a>
+           
+          </div>
+        </div>
+        </nav>
+        <!-- fin cabecera script 1 -->
+        <h5 class="center">Tu peso en otro planeta</h5>
+        <div class="col s12 m6">
+              <div class="input-field">
+              
+              <input id="icon_prefix" type="number" class="validate">
+              <label for="icon_prefix">ingresa tu peso actual</label>
+             </div>
+               <!-- combo -->
+            <div class="input-field">
+              <select id="planetas">
+                <option value=""  >que planeta?</option>
+                <option value="1">Jupiter</option>
+                <option value="2">Marte</option>
+                
+              </select>
+              <label>elige el planeta</label> 
+            </div>
+            <!-- combo -->
+            <!-- boton calcular -->
+            <a class="waves-effect waves-light btn" id="calcularDensidad"><i class="material-icons left">cloud</i>Calcular peso</a>
+            <!-- close boton calcular -->
+        </div>
+         <!-- mensaje de pesos -->
+           <div class="col s12 m6 ">
+          <div class="card blue-grey darken-1">
+            <div class="card-content white-text">
+              
+              <p>Este script calcula cual seria tu peso en jupiter o en marte, teniendo en cuenta tu peso actual en la tierra</p>
+            </div>
+            <div class="card-action">
+              <p>Tu peso en <span id="insertarPeso">...</span></p>
+            </div>
+          </div>
+        </div>
+           <!-- mensaje de pesos cerrado -->
+
+      </div>
+    
+     
+  <!-- fin primer script -->
+     
+  <!-- segundo script -->
+      <div class="row center contenedor-script">
+        <!-- cabecera del script 2  -->
+        <nav>
+        <div class="nav-wrapper">
+          <div class="col s12">
+            <a href="#!" class="breadcrumb">javascript - script 2</a>
+           
+          </div>
+        </div>
+        </nav>
+        <!-- fin cabecera script 2 -->
+        <h5 class="center">calcular iva</h5>
+        <div class="col s12 m6">
+              <div class="input-field">
+              
+              <input id="cantidadIva" type="number" class="validate">
+              <label for="icon_prefix">ingresa una cantidad para calcular iva</label>
+             </div>
+           
+            <!-- boton calcular -->
+            <a class="waves-effect waves-light btn" id="calcularIva"><i class="material-icons left">cloud</i>Calcular iva</a>
+            <!-- close boton calcular -->
+        </div>
+         <!-- mensaje de pesos -->
+           <div class="col s12 m6 ">
+          <div class="card blue-grey darken-1">
+            <div class="card-content white-text">
+              
+              <p>Este script calcula el iva correspondiente aplicar a la cantidad que ingreses , ademas muestra cual seria el precio apagar con la cantidad que ingreses y su iva correspondiente incluido</p>
+            </div>
+            
+          </div>
+        </div>
+           <!-- mensaje de pesos cerrado -->
+           
+             
+            <ul class="collection">
+             <li class="collection-item">El iva correspondiente para esa cantidad es de <span class="new badge" data-badge-caption=""  id="insertarIva">.. </span></li>
+              <li class="collection-item">El monto total a pagar (cantidad que ingresaste + su iva aplicado) es de <span class="new badge" data-badge-caption="" id="insertarMontoTotal">...</span></li>
+              <li class="collection-item new badge red" data-badge-caption="" id="aditionalInformation" ></li>
+              
+            </ul>
+      </div>
+    
+     
+  <!-- fin segundo script -->
+
+  <div class="container">
+    <div class="section">
+
+      <!--   Icon Section   -->
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center light-blue-text"><i class="material-icons">flash_on</i></h2>
+            <h5 class="center">Speeds up development</h5>
+
+            <p class="light">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.</p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center light-blue-text"><i class="material-icons">group</i></h2>
+            <h5 class="center">User Experience Focused</h5>
+
+            <p class="light">By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system across all platforms allow for a more unified user experience.</p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center light-blue-text"><i class="material-icons">settings</i></h2>
+            <h5 class="center">Easy to work with</h5>
+
+            <p class="light">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <br><br>
+  </div>
+
+  <footer class="page-footer orange">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      Made by <a class="orange-text text-lighten-3" href="http://materializecss.com">scripts desarrollados por </a>Moises Mannarino
+      </div>
+
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+  </body>
+</html>
